@@ -68,7 +68,7 @@ DATABASE_PASSWORD=pomodoro
 3. Run the application:
 
 ```bash
-mvn spring-boot:run
+./mvnw spring-boot:run
 ```
 
 ## Database
@@ -88,7 +88,7 @@ The initial migrations create:
 Run the unit test suite with:
 
 ```bash
-mvn test
+./mvnw test
 ```
 
 The current tests focus on Pomodoro lifecycle rules, reminders, mapper output, Discord embeds and button behavior.
