@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: pomodoro-bot-postgres
+    environment:
+      POSTGRES_DB: pomodoro_bot
+      POSTGRES_USER: pomodoro
+      POSTGRES_PASSWORD: pomodoro
+    ports:
+      - "5432:5432"
+    volumes:
+      - pomodoro_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  pomodoro_postgres_data:
